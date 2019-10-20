@@ -12,7 +12,7 @@ export class GridComponent extends LitElement {
   public render = template.bind(this);
 
   public firstUpdated() {
-    if (this.gap) this.style.setProperty("grid-gap", `${this.gap}`);
+    if (this.gap) this.style.setProperty("grid-gap", this.gap);
     if (this.columns)
       this.style.setProperty(
         "grid-template-columns",
